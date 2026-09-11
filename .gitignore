@@ -1,0 +1,21 @@
+## Visual Studio & Build Outputs
+.vs/
+bin/
+obj/
+publish/
+**/publish/
+
+## Environment & Local Configuration
+appsettings.Development.json
+*.user
+*.useroslog
+
+## Exclude Tests & Local REST Files
+tests/
+Tests/
+*.http
+*.rest
+
+# Exclude local image uploads since we use Azure Blob Storage
+API/wwwroot/images/*
+!API/wwwroot/images/.gitkeep
